@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang=”pt-br”>
+<head>
+    <meta charset=”UTF-8”>
+    <title></title>
+</head>
+<body>
+    <h1>"Seja bem vido"</h1>
+
+    <p> Agora sao: {{now}}</p>
+    
+    <ul>
+    {% for transacao in transacoes%}
+  
+      {% if transacao == "t1" %}
+        <li><b>{{transacao}}</b></li>
+      
+      {% else %}
+      
+      <li>{{transacao}}</li>
+      
+      {% endif %}
+      
+    {% endfor %}
+    </ul> 
+  </body>
+</html>
